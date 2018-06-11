@@ -1,0 +1,41 @@
+/*Classes*/
+
+.frontpage-icon{
+  color: whitesmoke;
+}
+
+.frontpage-font{
+  font-family: "Sanchez", times, serif;
+  color: whitesmoke;
+}
+
+.frontpage-font-black{
+  font-family: "Sanchez", times, serif;
+  color: black;
+}
+
+.frontpage-font-description{
+  color: #88929a;
+}
+
+/*Ids*/
+
+#subtitle-font{
+  font-size: 31px;
+  font-weight: 300;
+  line-height: 51px;
+  margin: 0 0 2.5em 0;
+}
+
+#faqs{
+  background-color: whitesmoke;
+}
+
+#faqs-line{
+  display: block;
+  position: absolute;
+  background-color: #18bc9c;
+  width: 100%;
+  height: 3px;
+}
+
