@@ -16,6 +16,7 @@ export class AppComponent {
   }
 
   subscribe(){
-    this.frontpageService.sendMail(this.email).subscribe(() => this.submitted = true, (e) => console.error(e));
+    if(this.email.match(/^\S+@\w+.\w+$/))
+      this.frontpageService.sendMail(this.email).subscribe(() => this.submitted = true, (e) => console.error(e));
   }
 }
