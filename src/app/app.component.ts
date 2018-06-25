@@ -17,6 +17,8 @@ export class AppComponent {
 
   subscribe(){
     if(this.email.match(/^\S+@\w+.\w+$/))
-      this.frontpageService.sendMail(this.email).subscribe(() => this.submitted = true, (e) => console.error(e));
+      this.frontpageService.sendMail(this.email).subscribe(() => this.submitted = true, (e) => alert(e));
+    else
+      alert("El formato del email no es correcto.");
   }
 }
