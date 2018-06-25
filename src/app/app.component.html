@@ -5,12 +5,12 @@
            style="max-width: 40%;">
       <div>
         <h4 class="frontpage-icon">Quieres que te avisemos cuando abramos las inscripciones?</h4>
-        <input class="text-center" type="email" placeholder="Email">
-        <input type="button" class="btn btn-outline-dark font-weight-bold" value="Recordar">
+        <input id="email-input" class="text-center mail-input" type="email" placeholder="Email" [(ngModel)]="email">
+        <input type="button" class="btn mail-button" (click)="subscribe()" [value]="submitted ? '✓' : 'Recordar'">
       </div>
       <p class="p-5" align="center">
         <a href="https://www.facebook.com/HackEPS/"><i
-          class="frontpage-icon fa fa-facebook fa-5x"></i></a>
+          class="frontpage-icon fa fa-facebook fa-4x"></i></a>
         <a href="https://twitter.com/hackeps" class="to-animate"><i class="frontpage-icon fa fa-twitter fa-4x"></i></a>
         <a href="mailto:hackeps2017@gmail.com" class="to-animate"><i
           class="frontpage-icon fa fa-envelope fa-4x"></i></a>

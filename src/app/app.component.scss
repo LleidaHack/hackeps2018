@@ -37,6 +37,27 @@
   width: 100%;
 }
 
+.mail-input, .mail-button {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  height: 38px;
+}
+
+.mail-input {
+  height: 37px;
+  outline: none;
+
+  &:focus {
+    //border: 1px solid #148a7b;
+  }
+}
+
+.mail-button {
+  background-color: #148a7b;
+  color: #fff;
+  cursor: pointer;
+}
+
 /*Ids*/
 
 #subtitle-font{
