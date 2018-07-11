@@ -3,11 +3,14 @@
     <div align="center">
       <img id="hackeps-logo" class="rounded transition-logo" src="../assets/img/HACKEPSweb.png" alt="HackEps logo"
            style="max-width: 40%;">
-      <h1 id="subtitle-font" class="frontpage-font">Segunda edición de la hackathon de 24h en la Escuela Politecnica
-        Superior de Lleida, 2018</h1>
-      <p align="center">
+      <div>
+        <h4 class="frontpage-icon">¿Quieres que te avisemos cuando abramos las inscripciones?</h4>
+        <input id="email-input" class="text-center mail-input" type="email" placeholder="Email" [(ngModel)]="email">
+        <input type="button" [disabled]="submitted" class="btn mail-button" (click)="subscribe()" [value]="submitted ? 'Guardado ✓' : 'Recordar'">
+      </div>
+      <p class="p-5" align="center">
         <a href="https://www.facebook.com/HackEPS/"><i
-          class="frontpage-icon fa fa-facebook fa-5x"></i></a>
+          class="frontpage-icon fa fa-facebook fa-4x"></i></a>
         <a href="https://twitter.com/hackeps" class="to-animate"><i class="frontpage-icon fa fa-twitter fa-4x"></i></a>
         <a href="mailto:hackeps2017@gmail.com" class="to-animate"><i
           class="frontpage-icon fa fa-envelope fa-4x"></i></a>
@@ -25,7 +28,7 @@
       <p class="p-3 frontpage-font-description">Aquí intentamos resolver algunas dudas y dejar claros aspectos generales
         de la
         hackathon. Si tienes alguna duda
-        más no tenga duda en contactar con la organización de la HackEPS.</p>
+        adicional, ponte en contacto con la organización de la HackEPS.</p>
     </div>
     <div class="col-md-6 offset-md-1">
       <div>
@@ -77,7 +80,7 @@
           <p class="p-2 frontpage-font-description">Sí pero no. Quien quiera (y pueda aguantar) puede estarlo y
             aprovechar al máximo las horas de dedicación al proyecto, pero habilitaremos zonas oscuras y silenciosas
             donde
-            podréis descansar. Recomendamos traer asterilla y saco de dormir.</p>
+            podréis descansar. Recomendamos traer esterilla y saco de dormir.</p>
         </details>
       </div>
       <div>
@@ -94,7 +97,7 @@
           <summary class="frontpage-font-description">Respuesta</summary>
           <p class="p-2 frontpage-font-description">¡No te preocupes! Las posibilidades son infinitas. Puedes buscar un
             equipo una vez llegues al recinto, junto con otra gente que no tiene equipo, o bien juntarte a un equipo con
-            algún vacante libre, o... !participar por libre!</p>
+            algún vacante libre, o... ¡participar por libre!</p>
         </details>
       </div>
       <div>
@@ -120,7 +123,7 @@
         <details>
           <summary class="frontpage-font-description">Respuesta</summary>
           <p class="p-2 frontpage-font-description">Estamos abiertos a cualquier tipo de colaboración ya sea como un
-            organizador más, como a sponsor o como mentor. Contacta con nosotros.</p>
+            organizador más, como sponsor o como mentor. Contacta con nosotros.</p>
         </details>
       </div>
     </div>
@@ -131,20 +134,27 @@
   <div class="row">
     <h1 align="center" class="col-md-12 frontpage-font">Horario</h1>
     <p align="center" class="col-md-12 frontpage-font" style="font-size: 20px">
-      La organización esta trabajando en un horario estable y adecuado para los participantes, de momento sabemos seguro
+      La organización está trabajando en un horario estable y adecuado para los participantes, de momento sabemos seguro
       que la hackathon será los días 17 y 18 de noviembre.
     </p>
   </div>
 </div>
 <div id="sponsors" class="col-md-12 p-5">
-  <h1 class="col-md-12 frontpage-font-black" align="center">COLABORADORES</h1>
+  <div class="row">
+    <h2 class="col-md-12 frontpage-font-black text-center">Colaboradores</h2>
+  </div>
+  <div class="row p-3">
+    <a class="col-md-12 text-center" href="http://www.eps.udl.cat/ca/" target="_blank">
+      <img src="../assets/img/EPS.png" alt="Escola Politècnica Superior" class="img-fluid">
+    </a>
+  </div>
   <div class="row">
     <div class="col-md-3 offset-md-3">
-      <a href="http://www.eps.udl.cat/ca/" target="_blank">
-        <img src="../assets/img/EPS.png" alt="Escola Politècnica Superior" class="img-fluid float-md-right">
+      <a href="https://www.semic.es/" target="_blank">
+        <img src="../assets/img/semic.png" alt="Semic" class="img-fluid float-md-right">
       </a>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-3">
       <a href="https://www.cag.es/" target="_blank">
         <img src="../assets/img/bonarea.png" alt="BonÀrea"
              class="img-fluid">
@@ -153,26 +163,21 @@
   </div>
   <div class="row p-3">
     <div class="col-md-3 offset-3">
-      <a href="https://www.semic.es/" target="_blank">
-        <img src="../assets/img/semic.png" alt="Semic" class="img-fluid float-md-right">
+      <a href="https://www.stratesys-ts.com/es/" target="_blank">
+        <img src="../assets/img/Stratesys.png" alt="Stratesys" class="img-fluid float-md-right">
       </a>
     </div>
-    <div class="col-md-6">
+    <div class="col-md-3">
       <a href="https://www.xtrategics.com/" target="_blank">
         <img src="../assets/img/xtrategics.png" alt="Xtrategics"
              class="img-fluid">
       </a>
     </div>
   </div>
-  <div class="row p-3">
-      <a class="col-md-12 text-center" href="https://www.stratesys-ts.com/es/" target="_blank">
-        <img src="../assets/img/Stratesys.png" alt="Stratesys" class="img-fluid">
-      </a>
-  </div>
 </div>
 <footer class="col-md-12">
   <div class="row">
     <a id="footer-links" class="col-md-12 text-center frontpage-font p-5"
-       target="_blank" href="https://lleidadevelopers.github.io/HackEPS/">Hackeps 2017 website</a>
+       target="_blank" href="https://lleidadevelopers.github.io/HackEPS/">Visita la web de Hackeps 2017</a>
   </div>
 </footer>
