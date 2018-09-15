@@ -1,0 +1,92 @@
+summary{
+  cursor: pointer;
+}
+
+/*Classes*/
+
+.frontpage-icon{
+  color: whitesmoke;
+}
+
+.frontpage-font{
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: whitesmoke;
+}
+
+.frontpage-font-black{
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.frontpage-font-description{
+  color: #88929a;
+}
+
+@keyframes superAnimation {
+  0% {
+    margin-top: 30px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+.transition-logo{
+  animation: 1s ease-out 0s 1 superAnimation;
+}
+
+.frontpage-sponsors-logo{
+  width: 100%;
+}
+
+.mail-input, .mail-button {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  height: 38px;
+}
+
+.mail-input {
+  height: 37px;
+  outline: none;
+
+  &:focus {
+    //border: 1px solid #148a7b;
+  }
+}
+
+.mail-button {
+  background-color: #148a7b;
+  color: #fff;
+  cursor: pointer;
+}
+
+/*Ids*/
+
+#subtitle-font{
+  font-size: 31px;
+  font-weight: 300;
+  line-height: 51px;
+  margin: 0 0 2.5em 0;
+}
+
+#faqs{
+  background-color: whitesmoke;
+}
+
+#faqs-line{
+  display: block;
+  position: absolute;
+  background-color: #18bc9c;
+  width: 100%;
+  height: 3px;
+}
+
+#sponsors{
+  background-color: whitesmoke;
+}
+
+#footer-links{
+  font-size: 20px;
+}
