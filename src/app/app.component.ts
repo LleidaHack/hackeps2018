@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {FrontpageService} from "./frontpage.service";
+import {FrontpageService} from "./frontpage/frontpage.service";
 
 @Component({
   selector: 'app-root',
