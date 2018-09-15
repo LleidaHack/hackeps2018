@@ -7,17 +7,21 @@ import {FormsModule} from "@angular/forms";
 import {AppComponent} from './app.component';
 import {FrontpageService} from "./frontpage.service";
 import {HttpClientModule} from "@angular/common/http";
+import { TermsComponent } from './terms/terms.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    TermsComponent,
   ],
   imports: [
     BrowserModule,
     CommonModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [FrontpageService],
   bootstrap: [AppComponent]

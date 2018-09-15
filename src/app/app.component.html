@@ -4,9 +4,8 @@
       <img id="hackeps-logo" class="rounded transition-logo" src="../assets/img/HACKEPSweb.png" alt="HackEps logo"
            style="max-width: 40%;">
       <div>
-        <h4 class="frontpage-icon">¿Quieres que te avisemos cuando abramos las inscripciones?</h4>
-        <input id="email-input" class="text-center mail-input" type="email" placeholder="Email" [(ngModel)]="email">
-        <input type="button" [disabled]="submitted" class="btn mail-button" (click)="subscribe()" [value]="submitted ? 'Guardado ✓' : 'Recordar'">
+        <h4 class="frontpage-icon">¡INSCRIPCIONES ABIERTAS!</h4>
+        <a href="https://lleidahack.typeform.com/to/B1vOJX" class="btn mail-button">¡Deseo inscribirme!</a>
       </div>
       <p class="p-5" align="center">
         <a href="https://www.facebook.com/HackEPS/"><i
@@ -205,5 +204,9 @@
   <div class="row">
     <a id="footer-links" class="col-md-12 text-center frontpage-font p-5"
        target="_blank" href="https://lleidahack.github.io/hackeps2017/">Visita la web de Hackeps 2017</a>
+  </div>
+  <div class="row">
+    <a id="terms-and-conditions" class="col-md-12 text-center frontpage-font p-5"
+       [routerLink]="['/terms']">Términos y condiciones</a>
   </div>
 </footer>
